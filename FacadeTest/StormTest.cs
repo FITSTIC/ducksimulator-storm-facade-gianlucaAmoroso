@@ -25,7 +25,7 @@ namespace FacadeTest
                 storm.FillStorm(-15);
                 Assert.Fail();
             }
-            catch(Exception){
+            catch(ArgumentException){
 
             }
 
@@ -75,7 +75,7 @@ namespace FacadeTest
             {
                 storm.Migrate(Direction.NORD, 25.3);
                 Assert.Fail();
-            }catch(Exception){
+            }catch(ApplicationException){
                 
             }
 
